@@ -48,7 +48,7 @@ def handle_missing_values(df):
     return df
 
 
-# 5️⃣ 이상치 / 오류값 처리
+# 이상치 / 오류값 처리
 def handle_invalid_values(df):
     
     # division 문제 방지
@@ -59,13 +59,13 @@ def handle_invalid_values(df):
     return df
 
 
-# 6️⃣ 중복 제거
+# 중복 제거
 def remove_duplicates(df):
     df = df.drop_duplicates()
     return df
 
 
-# 7️⃣ 전체 파이프라인
+# 전체 파이프라인
 def clean_data(df):
     
     df = df.copy()
